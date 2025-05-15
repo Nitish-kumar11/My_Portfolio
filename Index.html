@@ -17,6 +17,10 @@
 </head>
 
 <body>
+    <button onclick="toggleTheme()" id="themeToggleBtn"
+        style="margin-left: 20px; padding: 8px 16px; border: none; border-radius: 6px; cursor: pointer; background-color: #333; color: white; transition: 0.3s;">
+        Dark Mode
+    </button>
     <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
     </div>
@@ -33,7 +37,6 @@
 ">
                 Portfolio
             </p>
-
             <div class="logo"><a href="#"><span></span></a></div>
             <ul class="menu">
                 <li><a href="#home" class="menu-btn">Home</a></li>
@@ -379,6 +382,50 @@
             }
         });
     });
+    function toggleTheme() {
+        const body = document.body;
+        const isDark = body.style.backgroundColor === "rgb(18, 18, 18)";
+        const toggleBtn = document.getElementById("themeToggleBtn");
+
+        if (!isDark) {
+            // Apply Dark Mode
+            body.style.backgroundColor = "#121212";
+            body.style.color = "#f1f1f1";
+            toggleBtn.innerText = "Light Mode";
+            toggleBtn.style.backgroundColor = "#f1f1f1";
+            toggleBtn.style.color = "#121212";
+
+            // Loop through major sections
+            document.querySelectorAll('section, .card, .box, .navbar, footer, .menu, .scroll-up-btn, .social-media').forEach(el => {
+                el.style.backgroundColor = "#1e1e1e";
+                el.style.color = "#f1f1f1";
+                el.style.borderColor = "#444";
+            });
+
+            // Special case: headings and links
+            document.querySelectorAll("a").forEach(link => {
+                link.style.color = "#80cbc4";
+            });
+
+        } else {
+            // Reset to Light Mode
+            body.style.backgroundColor = "";
+            body.style.color = "";
+            toggleBtn.innerText = "Dark Mode";
+            toggleBtn.style.backgroundColor = "#333";
+            toggleBtn.style.color = "#f1f1f1";
+
+            document.querySelectorAll('section, .card, .box, .navbar, footer, .menu, .scroll-up-btn, .social-media').forEach(el => {
+                el.style.backgroundColor = "";
+                el.style.color = "";
+                el.style.borderColor = "";
+            });
+
+            document.querySelectorAll("a").forEach(link => {
+                link.style.color = "";
+            });
+        }
+    }
 </script>
 
 </html>
