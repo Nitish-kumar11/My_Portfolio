@@ -1,9 +1,10 @@
-# 🌐 Personal Portfolio Website
+# 🌐 Personal Portfolio Website:-
+Hi, I'm Nitish – an engineering student and developer passionate about building meaningful web experiences. This portfolio is my digital front page, where I showcase who I am and what I do.
 Welcome to my personal portfolio website! This site showcases My service, my skills, my team , and contact information. 
 I Built this using modern web technologies to reflect my journey as a developer and content creator.
 
 🚀 Live Demo
-🔗 [View Portfolio Live](https://your-portfolio-link.com)
+🔗 [View Portfolio Live](http://127.0.0.1:5500/Index.html)
 
 
 🛠️ Tech Stack
@@ -20,3 +21,6 @@ I Built this using modern web technologies to reflect my journey as a developer 
 - 💻 Responsive Design for all screen sizes
 
 
+
+Made with creativity & caffeine ☕  
+© 2025 Nitish 
