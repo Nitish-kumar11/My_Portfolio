@@ -3,6 +3,12 @@ Hi, I'm Nitish – an engineering student and developer passionate about buildin
 Welcome to my personal portfolio website! This site showcases My service, my skills, my team , and contact information. 
 I Built this using modern web technologies to reflect my journey as a developer and content creator.
 
+📸 SCREEN-SHOT
+
+![MY_Portfolio](https://github.com/user-attachments/assets/342560c0-26be-48a4-a3fe-edf95a511bb7)
+
+
+
 🚀 Live Demo
 🔗 [View Portfolio Live](http://127.0.0.1:5500/Index.html)
 
